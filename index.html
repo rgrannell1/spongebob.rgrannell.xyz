@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>spongebob.rgrannell.xyz</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      color: white;
+      font-family: sans-serif;
+      background-image: url('/images/mocking-spongebob-rescaled.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: min(30px, 5vw);
+    }
+
+    input, output {
+      width: 100%;
+      font-size: 2em;
+      background-color: white;
+      border: 5px solid grey;
+      display: block;
+      color: grey;
+      text-overflow: wrap;
+    }
+
+    #spongebob-input-form {
+      margin-bottom: 30px;
+    }
+    label {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+
+  <form id="spongebob-input-form">
+    <label id="idiot-says-label" for="idiot-says">AN IDIOT SAYS...</label>
+    <input type="text" id="idiot-says" name="idiot-says" placeholder="Type something here..." required>
+  </form>
+
+  <label for="spongebob-output">YOU HEAR</label>
+  <output id="spongebob-output"></output>
+
+</body>
+<script src="/js/index.js"></script>
+</html>
