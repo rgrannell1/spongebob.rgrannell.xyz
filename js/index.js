@@ -20,4 +20,4 @@ function onInput() {
   $output.innerHTML = spongebobText;
 }
 
-$input.addEventListener('keydown', onInput);
+$input.addEventListener('keyup', onInput);
